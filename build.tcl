@@ -52,7 +52,7 @@ set_property board_part $prjboard [current_project]
 # Add Constraints
 import_files -fileset constrs_1 -norecurse $board_dir/base.xdc
 import_files -fileset constrs_1 -norecurse $board_dir/dut_floor.xdc
-set_property used_in_synthesis false    [get_files $board_dir/dut_floor.xdc]
+set_property used_in_synthesis false  [get_files dut_floor.xdc ]
 
 # Creating BD: provides cr_bd_bd_top
 source $board_dir/${bdname}.tcl

@@ -14,7 +14,7 @@ default: $(VPRJ)
 
 $(VPRJ):
 	@mkdir -p build/$(PROJ)
-	vivado -mode batch -nojournal -notrace -log	$(VPRJ_DIR)/$(PROJ)_create.log \
+	vivado -mode batch -nojournal -notrace -log $(VPRJ_DIR)/prj_create.log \
 		-source build.tcl -tclargs --board $(BOARD) --prjname $(PROJ) --runjobs $(NTHRD)
 
 .PHONY: default
