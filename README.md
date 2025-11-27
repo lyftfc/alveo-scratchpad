@@ -24,6 +24,20 @@ Other IPs such as DMA and DDRs are not included due to their size.
 
 Tested on Vivado versions 2021 to 2023.
 
+Usage
+-----
+
+In the repo directory, do
+
+```bash
+make PROJ=<your-project-name>
+```
+
+Requires the desired version of Vivado available in PATH.
+
+A template project will be generated under `build/<your-project-name>/`.
+Open the project and add your own sources/IPs in the block design.
+
 Features
 --------
 
